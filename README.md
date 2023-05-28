@@ -113,6 +113,10 @@ A continuación se describe la forma en que se ejecutó la semana 1 de la **Estr
 
 - navegacion (Escenario que permite navegar entre las paginas Post, Page, tags y members de forma aleatoria cada vez ue ejecutas el escenario)
 
+# VENTAJAS Y DESVENTAJAS DEL PROCEDO DE PRUEBAS:
+
+- En el siguiente link: [Ventajas](https://github.com/lsochoa2023/final-automatizadas/wiki/ventajas-desventajas-proceso-pruebas)
+
 # Integrantes:
 
 - Luz Stella Ochoa Marin (ls.ochoa@uniandes.edu.co)
