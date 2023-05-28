@@ -117,6 +117,6 @@ A continuación se describe la forma en que se ejecutó la semana 1 de la **Estr
 
 - Luz Stella Ochoa Marin (ls.ochoa@uniandes.edu.co)
 
-## IMPORTANTE!! envie un correo al profesor Mario, donde solicitaba no trabajar sola, debido a la irresponsabilidad de mi compañero de grupo en las 2 anteriores entregas(Practicamente me tocó trabajar sola)
+## IMPORTANTE!! envie un correo al profesor Mario el día martar 23 de mayo, donde solicitaba continuar trabajando sola, debido a la irresponsabilidad de mi compañero de grupo en las 2 anteriores entregas(Practicamente me tocó realizar el trabajo sola). Pero al parecer el profesor no logro ver mi correo a tiempo y me calificaron la anterior entrega con él, que realmente no se la merecía.
 
 --------- HASTA AQUI
