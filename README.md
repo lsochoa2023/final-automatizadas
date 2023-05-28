@@ -1,6 +1,6 @@
-# Pruebas-Ghost-E2E-Kraken-
+# Estrategia Prueba final
 
-## En este repositorio están los 20 escenarios y pruebas creadas con la herramienta kraken para la aplicación bajo pruebas ghost
+## En este repositorio se encuentra la estrategía de pruebas final y la implementación de la semana #1
 
 # Requisitos:
 
