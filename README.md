@@ -62,17 +62,19 @@ A continuación se describe la forma en que se ejecutó la semana 1 de la **Estr
 
 - Dentro del proyecto se encuentran 10 escenarios en la carpeta **kraken-E2E**, probando las funcionalidades: Crear post, Iniciar sesión y Recuperar contraseña
 
+* NOTA: Después de haber corrido los escenarios en las pruebas de E2E, se copian las carpetas de los screnshot a las carpetas respectivas de Resemble, para proceder con las pruebas de regresión visual.
+
 # Pruebas de Regresión Visual con ResembleJS
 
 - Aqui se hace la comparación de las verisones 3.41.1 y 4.44.0 de GHOST
 
-- Dentro del proyecto se encuentra la carpeta **Resembl** con el proyecto de pruebas de regresión visual. Dentro de la carpeta **screenshots** hay 3 carpetas con los siguientes propositos:
+- Dentro del proyecto se encuentra la carpeta **Resemble** con el proyecto de pruebas de regresión visual. Dentro de la carpeta **screenshots** hay 3 carpetas con los siguientes propositos:
 
 - La carpeta **GHOST-3-41-1** contine las carpetas con screenshots por funcionalidad de la versión anterior de ghost.
 - La carpeta **GHOST-4-44-0** contine las carpetas con screenshots por funcionalidad de la versión a comparar de ghost.
 - La carpeta **compare** es el resultado de la comparación de los screenshot de cada una de las funcionalidades de cada versión de GHOST.
 
-- CONCLUSION:
+- CONCLUSION: con respecto a los resultados de las pruebas de regresión visual, como se compararon la primera y la ultima versión hay una diferencia en cuanto a colores y mejoras del css, pero los elementos podriamos decir que son lso mismos.
 
 # Pruebas con escenarios de validación de datos a través de APIs
 
@@ -122,5 +124,3 @@ A continuación se describe la forma en que se ejecutó la semana 1 de la **Estr
 - Luz Stella Ochoa Marin (ls.ochoa@uniandes.edu.co)
 
 ## IMPORTANTE!! envie un correo al profesor Mario el día martar 23 de mayo, donde solicitaba continuar trabajando sola, debido a la irresponsabilidad de mi compañero de grupo en las 2 anteriores entregas(Practicamente me tocó realizar el trabajo sola). Pero al parecer el profesor no logro ver mi correo a tiempo y me calificaron la anterior entrega con él, que realmente no se la merecía.
-
---------- HASTA AQUI

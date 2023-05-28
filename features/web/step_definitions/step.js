@@ -224,11 +224,6 @@ When("I enter login email {kraken-string}", async function (email) {
   return await element.setValue(email);
 });
 
-When("I submit login", async function () {
-  let element = await this.driver.$("#ember11");
-  return await element.click();
-});
-
 Then("I should have a nav-bar with functions", async function () {
   let element = await this.driver.$("section .gh-nav-top");
   return await element;
@@ -486,8 +481,8 @@ Then("I save post unpublished", async function () {
   return await element.click();
 });
 
-//Implementación pruebas E2E
-
+//Implementación pruebas E2E Versión 4.44.0
+/*
 When("I enter login email with e2e {kraken-string}", async function (email) {
   let element = await this.driver.$("#ember8");
   return await element.setValue(email);
@@ -500,6 +495,57 @@ When(
     return await element.setValue(password);
   }
 );
+
+When("I submit login", async function () {
+  let element = await this.driver.$("#ember11");
+  return await element.click();
+});
+
+Then("I enter title post with e2e {kraken-string}", async function (title) {
+  let element = await this.driver.$(
+    "textarea.gh-editor-title.ember-text-area.gh-input.ember-view"
+  );
+  return await element.setValue(title);
+});
+
+Then("I enter detail post with e2e {kraken-string}", async function (detail) {
+  let element = await this.driver.$(
+    "div.koenig-editor__editor.__mobiledoc-editor"
+  );
+  return await element.setValue(detail);
+});
+
+Then("I clic save post", async function () {
+  let element = await this.driver.$('.ember-view[href="#/posts/"]');
+  return await element.click();
+});
+
+Then("I submit forgot", async function () {
+  let element = await this.driver.$(
+    "button.forgotten-link.gh-btn.gh-btn-link.gh-btn-icon.ember-view"
+  );
+  return await element.click();
+});
+*/
+//Implementación pruebas E2E Versión 3.41.1
+
+When("I enter login email with e2e {kraken-string}", async function (email) {
+  let element = await this.driver.$("#ember8");
+  return await element.setValue(email);
+});
+
+When(
+  "I enter login password with e2e {kraken-string}",
+  async function (password) {
+    let element = await this.driver.$("#ember10");
+    return await element.setValue(password);
+  }
+);
+
+When("I submit login", async function () {
+  let element = await this.driver.$("#ember12");
+  return await element.click();
+});
 
 Then("I enter title post with e2e {kraken-string}", async function (title) {
   let element = await this.driver.$(

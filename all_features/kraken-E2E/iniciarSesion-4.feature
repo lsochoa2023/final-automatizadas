@@ -1,7 +1,7 @@
 Feature: Hacer Login 
 
 @user1 @web
-Scenario: Hacer Login con email vacío y password correcto
+Scenario: Hacer Login con email vacio y password correcto
   Given I navigate to page "<URL>"
   And I wait for 2 seconds
   When I enter login email with e2e "<USERNAME3>"

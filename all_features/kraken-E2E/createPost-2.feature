@@ -1,7 +1,7 @@
 Feature: Crear Post 
 
 @user1 @web
-Scenario: Crear Post sin título y con  detalle
+Scenario: Crear Post sin titulo y con  detalle
   Given I navigate to page "<URL>"
   And I wait for 2 seconds
   When I enter login email with e2e "<USERNAME1>"
