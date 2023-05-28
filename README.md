@@ -101,7 +101,7 @@ A continuación se describe la forma en que se ejecutó la semana 1 de la **Estr
 
 * createPost (Crea Post utilizando API de Mockaroo)
 
-## all_feature/mockara-priori :
+## all_feature/a-priori :
 
 - En esta carpeta se encuentran los escenarios que utilizan la estrategia de a-priori utilizando us csv de Mockaroo que fué creada previamente y con escenarios outline.
 
@@ -122,6 +122,10 @@ A continuación se describe la forma en que se ejecutó la semana 1 de la **Estr
 # VENTAJAS Y DESVENTAJAS DEL PROCEDO DE PRUEBAS:
 
 - En el siguiente link: [Ventajas](https://github.com/lsochoa2023/final-automatizadas/wiki/ventajas-desventajas-proceso-pruebas)
+
+# Video :
+
+[Link al video](https://drive.google.com/file/d/1ZRjS4RzLOwKs23MQCszPdpUIjltpj0sE/view?usp=sharing)
 
 # Integrantes:
 
