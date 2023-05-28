@@ -1,0 +1,246 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "hacer-login;hacer-login",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Hacer Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 156000000,
+              "error_message": "Error: Failed to create session.\nUnable to connect to \"http://localhost:4444/\", make sure browser driver is running on that address.\nIf you use services like chromedriver see initialiseServices logs above or in wdio.log file as the service might had problems to start the driver.\n    at startWebDriverSession (C:\\UNIANDES\\Automatizadas\\Entrega-semana-8\\Final-automatizadas\\node_modules\\webdriver\\build\\utils.js:73:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async Function.newSession (C:\\UNIANDES\\Automatizadas\\Entrega-semana-8\\Final-automatizadas\\node_modules\\webdriver\\build\\index.js:46:45)\n    at async Object.remote (C:\\UNIANDES\\Automatizadas\\Entrega-semana-8\\Final-automatizadas\\node_modules\\webdriverio\\build\\index.js:77:22)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to page \"<URL>\"",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\web.js:41"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter login email with e2e \"<USERNAME1>\"",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:491"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I enter login password with e2e \"<PASSWORD1>\"",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:496"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I wait for 1 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I submit login",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:227"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I navigate to page \"<POST>\"",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\web.js:41"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I wait for 1 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I navigate to page \"<EDITORPOST>\"",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\web.js:41"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I enter title post with e2e \"<TITLEPOST>\"",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:504"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I wait for 1 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I enter detail post with e2e \"<DETAILPOST>\"",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:511"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I wait for 7 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 16000000,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'deleteSession')\n    at WebClient.<anonymous> (C:\\UNIANDES\\Automatizadas\\Entrega-semana-8\\Final-automatizadas\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:109:59)\n    at step (C:\\UNIANDES\\Automatizadas\\Entrega-semana-8\\Final-automatizadas\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:59:23)\n    at Object.next (C:\\UNIANDES\\Automatizadas\\Entrega-semana-8\\Final-automatizadas\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:40:53)\n    at C:\\UNIANDES\\Automatizadas\\Entrega-semana-8\\Final-automatizadas\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:34:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\UNIANDES\\Automatizadas\\Entrega-semana-8\\Final-automatizadas\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:30:12)\n    at WebClient.stop (C:\\UNIANDES\\Automatizadas\\Entrega-semana-8\\Final-automatizadas\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:104:16)\n    at WebClient.<anonymous> (C:\\UNIANDES\\Automatizadas\\Entrega-semana-8\\Final-automatizadas\\node_modules\\kraken-node\\lib\\clients\\Client.js:109:51)\n    at step (C:\\UNIANDES\\Automatizadas\\Entrega-semana-8\\Final-automatizadas\\node_modules\\kraken-node\\lib\\clients\\Client.js:67:23)\n    at Object.next (C:\\UNIANDES\\Automatizadas\\Entrega-semana-8\\Final-automatizadas\\node_modules\\kraken-node\\lib\\clients\\Client.js:48:53)\n    at fulfilled (C:\\UNIANDES\\Automatizadas\\Entrega-semana-8\\Final-automatizadas\\node_modules\\kraken-node\\lib\\clients\\Client.js:39:58)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user1",
+            "line": 3
+          },
+          {
+            "name": "@web",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "hacer-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Hacer Login",
+    "tags": [],
+    "uri": "features\\createPost.feature"
+  }
+]

@@ -4,46 +4,24 @@
 
 # Requisitos:
 
-- Cypress
 - Node
 - Ghost 3.41.1 y 4.44.0
 - Tener un usuario registrado en el aplicativo ghost
 
 # Pasos para correr los escenarios de pruebas:
 
-- Clonar el repositorio en su equipo local, git clone https://github.com/juanjice29/Pruebas-Ghost-E2E-Kraken-.git
+- Clonar el repositorio en su equipo local, git clone https://github.com/lsochoa2023/final-automatizadas.git
 - Ejecutar **npm install kraken-node -g**, esto instalara dos librerias necesarias para correr los escenarios con kraken.
 - Ejecutar **npm install kraken-node**
 - Ejecutar **npm install -g appium**
+- instalar **npm install csv-parser**
+- instalas **npm install axios**
 - Revisar la version de cucumber que utiliza kraken(7.2.1)
   y ejecutar **npm install -g @cucumber/cucumber@7.2.1** y **npm install @cucumber/cucumber@7.2.1**
-- Moficar las variables del archivo **properties.json** de acuerdo a su entorno y preferencia, pero como requitos: **USERNAME1**, **PASSWORD1**, **USERNAME2**, **PASSWORD2**, **URL**, **POST** , **EDITORPOST** en estas 3 ultimas es muy importante el puerto donde estes corriendo GHOST.
-- Para ejecutar cada escenario, se debe llevar uno a uno de la carpeta **/all_features** a la carpéta **/features** y regresarlo a medida que lo haya ejecutado.
+- Moficar las variables del archivo **properties.json** de acuerdo a su entorno y preferencia, pero como requitos: **USERNAME1**, **PASSWORD1**, y al igual que se debe cambiar el puerto en las variables que aplique por el puerto donde esté corriendo GHOST.
+- Para ejacutar cada escenario se debe arrastrar a la carpeta **features** y posteriormente regresarlo a medida que no requiera ejecutarlo.
+
 - Ejecutar el comando **npx kraken-node run**, esto ejecutar el escenario correspondiente.
-
-## IMPLEMENTACIÓN SEMANA 6
-
-Las pruebas se realizadoron bajo Kraken y para las Regresión Visual se utilizó la herramienta de resemble.
-
-# Requisitos
-
-- La semana 5 trabajamos con la versión 3.41.1 y esta semana para las pruebas de regresión Visual la versión 4.44.0
-- Se requirio de hacer ajustes de los Page Object para la versión 4.44.0 para varios steps.
-- Se ajsutó el hook.js para que permitiera la captura de las himagenes de forma dinámica.
-- En la carpeta **/screenshot** las carpetas de cada una de las versiones y dentro de estas las carpetas por escenarios con sus respectivos screenshot de los diferentes pasos.
-
-# Las 10 funcionalidades de GHOST que se trabajan en esta semana 6 son:
-
-- func4_esc1 (Crear Post)
-- func4_esc2 (Ver Primer Post de la lista)
-- func4_esc3 (Editar Primer Post de la lista)
-- func4.esc4 (Filtrar Post Publicados)
-- func4.esc5 (Publicar Primer Post)
-- func4.esc6 (Despublicar primer Post de la lista)
-- func5.esc1 (Editar Full Name Perfil)
-- func5.esc2 (Verificar Edición de Full Name)
-- func5.esc3 (Cambiar Contraseña)
-- func5.esc4 (Verificar cambio contraseña)
 
 # Instrucciones para ejecutar las pruebas de regresión visual
 
@@ -52,63 +30,93 @@ npm install
 npm test
 ```
 
-# Actividad Semana 7
+# **Actividad final**
 
-## Requisitos
+## Estrategia de pruebas final
 
-- instalar **npm install csv-parser**
-- instalas **npm install axios**
+La encuentra dentro del proyecto en la carpeta **Estrategia-Pruebas**
+
+A continuación se describe la forma en que se ejecutó la semana 1 de la **Estrategía final de Pruebas**, donde se trabajaron las funcionalidades Hacer Login, Crear Post y Recuperar password (implementados con 11 escenarios):
+
+## ESCENARIOS:
+
+- **1** Hacer Login con credenciales correctas
+- **2** Hacer Login con email sin formato y password correcto
+- **3** Hacer Login con email correcto y password vacío
+- **4** Hacer Login con email vacío y password correcto
+- **5** Hacer Login con credenciales vacias
+- **6** Crear Post con título y detalle
+- **7** Crear Post con título y sin detalle
+- **8** Crear Post sin título y con detalle
+- **9** Crear Post con título vacío y detalle vacío
+- **10** Recuperar contraseña con el email correcto
+- **11** Crear Post con título de más de 500 caracteres
+
+# Pruebas exploratorias manuales y de reconocimiento con Ripper
+
+- Para las pruebas manuales exploratorias ver el siguiente enlace: [Inventario de pruebas Exploratorias](https://github.com/lsochoa2023/final-automatizadas/wiki/Inventario-Pruebas-Exploratorias)
+
+- Para las pruebas de reconocimiento con Ripper dentro del proyecto se encuentra la carpeta **Reconocimiento-Ripper**
+
+# Pruebas E2E con Kraken
+
+- Dentro del proyecto se encuentran 10 escenarios en la carpeta **kraken-E2E**, probando las funcionalidades: Crear post, Iniciar sesión y Recuperar contraseña
+
+# Pruebas de Regresión Visual con ResembleJS
+
+- Aqui se hace la comparación de las verisones 3.41.1 y 4.44.0 de GHOST
+
+- Dentro del proyecto se encuentra la carpeta **Resembl** con el proyecto de pruebas de regresión visual. Dentro de la carpeta **screenshots** hay 3 carpetas con los siguientes propositos:
+
+- La carpeta **GHOST-3-41-1** contine las carpetas con screenshots por funcionalidad de la versión anterior de ghost.
+- La carpeta **GHOST-4-44-0** contine las carpetas con screenshots por funcionalidad de la versión a comparar de ghost.
+- La carpeta **compare** es el resultado de la comparación de los screenshot de cada una de las funcionalidades de cada versión de GHOST.
+
+- CONCLUSION:
+
+# Pruebas con escenarios de validación de datos a través de APIs
+
 - Se trabaja con la versión 4.44.0 de Ghost
-- Para ejacutar cada escenario se debe arrastrar a la carpeta **features**
 
 # Las carpetas estan divididas segun la estrategia de generación de datos(Se utilizaron las 3 estrategías):
 
-## all_feature/aleatorio-faker : En esta carpeta se encuentran los escenarios que se le aplicacan la estrategia aleatoria con la libreria de faker:
+## all_feature/aleatorio-faker :
 
-- login.feature (Escenario que permite realizar login con email y contraseña incorrecta)
-- createPost.featur (Escenario para Crear Post con título y detalle aleatorio)
-- editarPerfil (Escenario Edita el perfil del usuario con data aleatoria)
-- etitarPost-1 (Escenario Editar Post con título de 500 caractres): no lo guardó, pero no mostró alerta.
-- editarPerfil-2 (Escenario para Editar nombre de perfil con un solo caracter de longitud(1).)
-- CabiarPass (Escenario para cambio de contraseña con 1 caracter de longitud) - Pasó la prueba
-- CabiarPass-1 (Escenario para cambio de contraseña con 10 caracteres y solo alfabeto)
-- createTag (Escenario para crear tag con el limite de 1 en el campo descripcion)
-- createTag-1 (Escenario para crear tag con el límite 500 en el campo descripcion)
-- createTag-2 (Escenario para crear tag con el límite 501 en el campo descripcion)
-- crear-Tag_sin_nombre (Escenario para crear tag sin nombre)
-- login-noPass (Escenario para hacer login con password incorrecto)
-- editarEmailPerfil (Escenario para modificar el email del perfil)- Ghost lo permite. grave error.
-- createPage (Escenario para crear paginas con título y detalle d elongitud normal)
-- createPage-1 (Escenario para crear página con más de 500 caracteres)
-- createMember (Escenario para crear miembro sin etiqueta)
+- En esta carpeta se encuentran los escenarios que se le aplicacan la estrategia aleatoria con la libreria de faker
+- Dentro de cada uno de los pasos se hace el llamado a la librería de faker con campos aleatorios.
 
-## all_feature/mockaroo : En esta carpeta se encuentran los escenarios que se utiliza la estrategía con API de Mockaroo:
+* login.feature (Escenario que permite realizar login con email y contraseña incorrecta)
+* createPost.featur (Escenario para Crear Post con título y detalle aleatorio)
+* login-noPass (Escenario para hacer login con password incorrecto)
 
-- createPost (Crea Post utilizando API de Mockaroo)
+## all_feature/mockaroo :
 
-## all_feature/mockara-priori : En esta carpeta se encuentran los escenarios que utilizan la estrategia de a-priori utilizando us csv de Mockaroo y con escenarios outline:
+- En esta carpeta se encuentran los escenarios que se utiliza la estrategía con API de Mockaroo, la cual fue creada previamente.
 
-- login (Escenario que consume un csv de Mockarro, cada vez que se ejecuta toma un valor aleatorio del scv) puede tomar email y password correstos
-- login (Escenario que consume un csv de Mockarro, cada vez que se ejecuta toma un valor aleatorio del scv) puede tomar ambos incorrectos
-- login (Escenario que consume un csv de Mockarro, cada vez que se ejecuta toma un valor aleatorio del scv) puede tomar el email correcto y password incorrecto
-- login (Escenario que consume un csv de Mockarro, cada vez que se ejecuta toma un valor aleatorio del scv) puede tomar emil incorrecto y password incorrecto
-- login (Escenario que consume un csv de Mockarro, cada vez que se ejecuta toma un valor aleatorio del scv) puede tomar emil vacio y passwor incorrecto
-- login (Escenario que consume un csv de Mockarro, cada vez que se ejecuta toma un valor aleatorio del scv) puede tomar emil incorrecto y password vacio
-- login (Escenario que consume un csv de Mockarro, cada vez que se ejecuta toma un valor aleatorio del scv) puede tomar emil formato incorrecto y password vacio
+* createPost (Crea Post utilizando API de Mockaroo)
 
-## all_feature/escenarios-aleatorios : En esta carpeta se encuentran los escenarios que utilizan la estrategia de escenarios aleatorios. Estos realizan una accion aleatoria cada que se ejecutan:
+## all_feature/mockara-priori :
+
+- En esta carpeta se encuentran los escenarios que utilizan la estrategia de a-priori utilizando us csv de Mockaroo que fué creada previamente y con escenarios outline.
+
+* login (Escenario que consume un csv de Mockarro, cada vez que se ejecuta toma un valor aleatorio del scv) puede tomar email y password correstos
+* login (Escenario que consume un csv de Mockarro, cada vez que se ejecuta toma un valor aleatorio del scv) puede tomar ambos incorrectos
+* login (Escenario que consume un csv de Mockarro, cada vez que se ejecuta toma un valor aleatorio del scv) puede tomar el email correcto y password incorrecto
+* login (Escenario que consume un csv de Mockarro, cada vez que se ejecuta toma un valor aleatorio del scv) puede tomar emil incorrecto y password incorrecto
+* login (Escenario que consume un csv de Mockarro, cada vez que se ejecuta toma un valor aleatorio del scv) puede tomar emil vacio y passwor incorrecto
+* login (Escenario que consume un csv de Mockarro, cada vez que se ejecuta toma un valor aleatorio del scv) puede tomar emil incorrecto y password vacio
+* login (Escenario que consume un csv de Mockarro, cada vez que se ejecuta toma un valor aleatorio del scv) puede tomar emil formato incorrecto y password vacio
+
+## all_feature/escenarios-aleatorios :
+
+-En esta carpeta se encuentran los escenarios que utilizan la estrategia de escenarios aleatorios. Estos realizan una accion aleatoria cada que se ejecutan:
 
 - navegacion (Escenario que permite navegar entre las paginas Post, Page, tags y members de forma aleatoria cada vez ue ejecutas el escenario)
-
-# Incidencias semana 7 (Ver la wiki)
-
-https://github.com/juanmanuelgg/Pruebas-Ghost-E2E-Kraken-/wiki/Incidencias-Semana-7
-
-# Trabajo con herramienta cypress en el siguiente link:
-
-- Cypress: https://github.com/juanmanuelgg/Pruebas-Ghost-E2E-Cypress
 
 # Integrantes:
 
 - Luz Stella Ochoa Marin (ls.ochoa@uniandes.edu.co)
-- Juan Manuel González Garzón (jm.gonzalez1844@uniandes.edu.co)
+
+## IMPORTANTE!! envie un correo al profesor Mario, donde solicitaba no trabajar sola, debido a la irresponsabilidad de mi compañero de grupo en las 2 anteriores entregas(Practicamente me tocó trabajar sola)
+
+--------- HASTA AQUI
