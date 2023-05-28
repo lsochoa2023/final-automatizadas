@@ -482,7 +482,6 @@ Then("I save post unpublished", async function () {
 });
 
 //Implementación pruebas E2E Versión 4.44.0
-/*
 When("I enter login email with e2e {kraken-string}", async function (email) {
   let element = await this.driver.$("#ember8");
   return await element.setValue(email);
@@ -526,9 +525,9 @@ Then("I submit forgot", async function () {
   );
   return await element.click();
 });
-*/
-//Implementación pruebas E2E Versión 3.41.1
 
+//Implementación pruebas E2E Versión 3.41.1
+/*
 When("I enter login email with e2e {kraken-string}", async function (email) {
   let element = await this.driver.$("#ember8");
   return await element.setValue(email);
@@ -572,3 +571,4 @@ Then("I submit forgot", async function () {
   );
   return await element.click();
 });
+*/
