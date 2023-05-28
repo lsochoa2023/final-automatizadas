@@ -58,7 +58,8 @@ A continuación se describe la forma en que se ejecutó la semana 1 de la **Estr
 
 # Pruebas de reconocimiento con Ripper
 
-- Se encuentran dentro de la carpeta **Ripper**
+- Se encuentran dentro del siguiente repo: **https://github.com/lsochoa2023/final-automatizadas-Ripper**
+- Se tuvo que independizar por generar conflicto.
 - Se debe posicionar en al carpeta de Ripper y luego ejecutar el siguiente comando: **node index.js http://localhost:3002/ghost/ true** teniendo presente cambiar el puerto y el archvo **config.json** se debe modificar los parametros según su necesidad (email y password).
 
 # Pruebas E2E con Kraken
